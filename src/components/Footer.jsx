@@ -1,4 +1,5 @@
-import { Smartphone, MapPin, Phone, Clock } from 'lucide-react'
+import LogoMark from './LogoMark'
+import { MapPin, Phone, Clock } from 'lucide-react'
 import { business, navLinks } from '../data/businessData'
 
 export default function Footer() {
@@ -7,7 +8,7 @@ export default function Footer() {
       <div className="container-x grid gap-10 py-14 md:grid-cols-3">
         <div>
           <div className="flex items-center gap-3 text-white">
-            <span className="grid h-10 w-10 place-items-center rounded-xl bg-white/10"><Smartphone size={20} /></span>
+            <LogoMark className="h-10 w-10" bg="#FFFFFF" fg="#12345A" />
             <span className="font-extrabold tracking-wide">ARYA CELL</span>
           </div>
           <p className="mt-4 text-sm leading-relaxed">Agen BRILink dan konter handphone di Situ Ilir, Cibungbulang, Kabupaten Bogor.</p>

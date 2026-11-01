@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import { Smartphone, Menu, X } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
+import LogoMark from './LogoMark'
 import { business, navLinks, waLink } from '../data/businessData'
 
 export default function Navbar() {
@@ -8,7 +9,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 border-b border-navy/10 bg-white/95 backdrop-blur">
       <nav className="container-x flex h-16 items-center justify-between" aria-label="Navigasi utama">
         <a href="#beranda" className="flex items-center gap-3">
-          <span className="grid h-10 w-10 place-items-center rounded-xl bg-navy text-white"><Smartphone size={20} /></span>
+          <LogoMark className="h-10 w-10" />
           <span className="leading-tight">
             <span className="block text-base font-extrabold tracking-wide text-navy">ARYA CELL</span>
             <span className="block text-[11px] text-muted">{business.subtitle}</span>
